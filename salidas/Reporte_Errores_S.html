@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8">
+<title>LigaBot — Reporte de Errores Sintacticos</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6f9;
+  color: #1a1a2e; padding: 32px 24px; }
+h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
+table { width: 100%; border-collapse: collapse; background: #fff;
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+thead tr { background: #1a1a2e; color: #fff; }
+th { padding: 12px 16px; text-align: left; font-size: 12px;
+  text-transform: uppercase; letter-spacing: .06em; }
+td { padding: 10px 16px; font-size: 13px;
+  border-bottom: 1px solid #eef0f4; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f8f9ff; }
+.victoria { color: #065f46; font-weight: 600; }
+.derrota  { color: #7f1d1d; font-weight: 600; }
+.empate   { color: #78350f; font-weight: 600; }
+.badge { display:inline-block; padding:2px 10px; border-radius:999px;
+  font-size:11px; font-weight:600; }
+.badge-error { background:#fee2e2; color:#7f1d1d; }
+.count { font-size:13px; color:#555; margin-top:16px; }
+.pos { font-weight: 700; color: #1a1a2e; }
+</style>
+</head>
+<body>
+<h1>LigaBot — Reporte de Errores Sintacticos</h1>
+<p class="subtitle">Fase 2 — Analisis sintactico</p>
+<table>
+<thead><tr><th>#</th><th>Fila</th><th>Col</th>
+<th>Token recibido</th><th>Token esperado</th><th>Descripción</th></tr></thead>
+<tbody><tr><td>1</td><td>0</td><td>0</td><td><span class="badge badge-error">FIN DE ENTRADA</span></td><td>NUMERO</td><td>Se esperaba 'NUMERO' pero se recibio 'FIN DE ENTRADA'</td></tr>
+</tbody>
+</table>
+<p class="count">Total de errores: <strong>1</strong></p>
+</body>
+</html>

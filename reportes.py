@@ -143,7 +143,7 @@ def generar_reporte_errores(errores: list[ErrorLexico],
 
     contenido_tabla = filas or (
         '<tr><td colspan="5" class="empty">'
-        'No se encontraron errores lexicos.'
+        'No se encontraron errores lexicos'
         '</td></tr>'
     )
 

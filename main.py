@@ -15,7 +15,7 @@ def main():
 
     except ImportError:
         
-        print('[LigaBot] tkinter no encontrado. Iniciando interfaz web')
+        print('[LigaBot] tkinter no encontrad, iniciando el metodo por interfaz web')
         from app_web import iniciar
         iniciar()
 
